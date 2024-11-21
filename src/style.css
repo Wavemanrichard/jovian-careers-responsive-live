@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #444444;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #222222;
+}
+
+/* rem is times the base font size, so 1.25rem is 1.25 x base font size of site */
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #3b82f6;
+}
+
+a:hover,
+a:focus {
+  color: #1d4ed8;
+}
+
+#navbar {
+  padding: 8px;
+}
+
+#logo {
+  height: 28px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#banner {
+  object-fit: cover;
+}
+
+#banner {
+  width: 100%;
+}
+
+#about {
+  display: flex;
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 8px;
+}
+
+#description {
+  padding-right: 8px;
+  width: 50%;
+  font-size: 1.25rem;
+}
+
+#team {
+  width: 50%;
+}
+
+#teamimage {
+  border-radius: 5px;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+#jobs {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+h3 {
+  margin-bottom: 8px;
+  margin-top: 0%;
+}
+/* 
+.apply {
+  float: right;
+} */
+
+/* jobs table */
+
+#table {
+  width: 100%;
+  margin: 0 auto;
+  border: 0px;
+  border-collapse: collapse;
+}
+
+.jobs-header-row th {
+  border: 0px;
+  padding: 8px;
+  background-color: #bfdbfe;
+  text-align: center;
+  color: #222222;
+}
+
+.jobs-header-subrow th {
+  padding: 8px;
+  background-color: #bfdbfe;
+  text-align: center;
+  color: #222222;
+}
+
+.jobs-data-row td {
+  padding: 8px;
+}
+
+#table tr:nth-child(odd) {
+  background-color: #eff6ff;
+}
+
+h3 {
+  text-align: center;
+}
+
+#application {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+#application-form label {
+  font-weight: 600;
+}
+.form-group {
+  margin: 4px;
+}
+.form-group textarea {
+  width: 80%;
+  font-family: "Roboto", sans-serif;
+}
+
+#application-form input,
+select,
+textarea {
+  padding: 8px;
+  font-size: 0.825rem;
+  margin-top: 4px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.form-group input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+.form-group input[type="submit"] {
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 500;
+  padding: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: #2563eb;
+  transform: scale(1.01);
+}
+
+/* footer */
+#footer {
+  background-color: #f8fafc;
+  padding: 8px;
+  margin-top: 32px;
+  text-align: center;
+}
+
+#footer-links {
+  list-style: none;
+  /* display: flex; */
+}
+
+#footer-links li {
+  display: inline;
+  margin: 0 16px;
+}
+
+.copyright {
+  color: #a1a1aa;
+  font-size: 0.875rem;
+}
