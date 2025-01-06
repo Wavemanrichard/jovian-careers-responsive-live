@@ -1,10 +1,14 @@
-
+/* Base style(mobile phone) */
+/* CSS Rules */
+html{
+  font-size: 14px;
+}
 
 body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   color: #444444;
 }
 
@@ -45,6 +49,7 @@ h3 {
   font-size: 1rem;
 }
 
+
 a {
   text-decoration: none;
   color: #3b82f6;
@@ -59,27 +64,192 @@ a:focus {
   padding: 8px;
 }
 
-#logo {
-  height: 28px;
-}
-
-h1 {
-  text-align: center;
+#logo-with-text{
+  display: none;
 }
 
 #banner {
   object-fit: cover;
+  height: 150px;
+  width: 100%;
 }
 
-#banner {
-  width: 100%;
+h1 {
+  text-align: center;
+  margin: 12px 0;
 }
 
 #about {
   display: flex;
-  max-width: 800px;
+  flex-direction: column;
+  max-width: 500px;
   margin: 0px auto;
   padding: 8px;
+}
+
+#description {
+  font-size: 1.25rem;
+}
+
+#team {
+  width: 100%;
+}
+
+#teamimage {
+  border-radius: 5px;
+  width: 100%;
+}
+
+
+h2 {
+  text-align: center;
+}
+
+#jobs {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+#jobs-list{
+  display: block;
+}
+
+#table{
+  display: none;
+}
+
+.job{
+  border: 1px solid #dddddd;
+  margin-top: 8px;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.job-title{
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #222222;
+}
+.job-detail{
+  margin-top:4px;
+  color: #555555;
+}
+
+#application {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+.form-group label {
+  font-weight: 600;
+}
+
+.form-group {
+  margin: 4px;
+}
+
+
+.form-group input,
+select,
+textarea {
+  width:90%;
+  padding: 8px;
+  font-size: 0.825rem;
+  margin-top: 4px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.form-group textarea {
+  font-family: "Roboto", sans-serif;
+}
+
+.form-group input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+.form-group input[type="submit"] {
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 500;
+  padding: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: #2563eb;
+  transform: scale(1.01);
+}
+
+#footer {
+  background-color: #f8fafc;
+  padding: 8px;
+  margin-top: 32px;
+  text-align: center;
+}
+
+#footer-links {
+  list-style: none;
+  padding-left: 0;
+
+}
+
+#footer-links li {
+  margin: 4px 16px;
+}
+
+.copyright {
+  color: #a1a1aa;
+  font-size: 0.875rem;
+}
+
+/* Small devices (tablets) */
+@media screen and (min-width: 576px){
+  /* CSS Rules */
+  html{
+    font-size: 16px;
+  }
+
+  #logo-with-text{
+    display: block;
+  }
+  #logo{
+    display: none;
+  }
+  #banner{
+    height: 200px;
+  }
+  h1{ 
+    margin: 16px 0;
+  }
+
+.form-group input, select{
+  width: auto;
+
+}
+
+.form-group textarea{
+  width: 80%;
+}
+
+}
+/* Medium devices (laptops) */
+@media screen and (min-width: 768px){
+  /* CSS Rules */
+#banner{
+  height: 250px;
+}
+h1{
+  margin: 20px 0;
+}
+
+#about{
+  max-width: 800px;
+  flex-direction: row;
 }
 
 #description {
@@ -88,35 +258,91 @@ h1 {
   font-size: 1.25rem;
 }
 
-#team {
+#jobs{
+  min-width: 800px;
+}
+
+#jobs-list{
+  display: none;
+
+}
+
+/* default display for a table tag is display:table;*/
+#table{
+  display: table;
+  width: 100%;
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+
+.jobs-header-row th {
+  border: 0px;
+  padding: 8px;
+  background-color: #bfdbfe;
+  text-align: center;
+  color: #222222;
+}
+
+.jobs-header-subrow th {
+  padding: 8px;
+  background-color: #bfdbfe;
+  text-align: center;
+  color: #222222;
+}
+
+.jobs-data-row td {
+  padding: 8px;
+}
+
+#table tr:nth-child(odd) {
+  background-color: #eff6ff;
+}
+
+#footer-links li{
+  display: inline;
+}
+
+}
+
+/* Large devices (desktops) */
+@media screen and (min-width: 992px){
+  /* CSS Rules */
+#banner{
+  height: 300px;
+}
+
+#team{
   width: 50%;
 }
 
-#teamimage {
-  border-radius: 5px;
-  width: 100%;
-}
-
-h2 {
-  text-align: center;
-}
-
-#jobs {
+#application{
   max-width: 800px;
-  margin: 0 auto;
-  padding: 0 8px;
 }
+
+}
+
+/* Extra-Large devices ( large desktops) */
+@media screen and (min-width: 1200px){
+  /* CSS Rules */
+  
+
+}
+
+
+/*
+
+
+#logo {
+  height: 28px;
+}
+
+
 
 h3 {
   margin-bottom: 8px;
   margin-top: 0%;
 }
-/* 
-.apply {
-  float: right;
-} */
 
-/* jobs table */
 
 #table {
   width: 100%;
@@ -161,6 +387,7 @@ h3 {
 #application-form label {
   font-weight: 600;
 }
+
 .form-group {
   margin: 4px;
 }
@@ -198,7 +425,7 @@ textarea {
   transform: scale(1.01);
 }
 
-/* footer */
+
 #footer {
   background-color: #f8fafc;
   padding: 8px;
@@ -208,7 +435,7 @@ textarea {
 
 #footer-links {
   list-style: none;
-  /* display: flex; */
+
 }
 
 #footer-links li {
@@ -220,3 +447,11 @@ textarea {
   color: #a1a1aa;
   font-size: 0.875rem;
 }
+*/
+
+/* 
+.apply {
+  float: right;
+} */
+
+/* jobs table */
